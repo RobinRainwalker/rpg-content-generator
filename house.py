@@ -73,3 +73,8 @@ class smallHouse:
 # newBigHouse = bigHouse()
 # newMedHouse = medHouse()
 # newSmallHouse = smallHouse()
+
+# print(newMassiveHouse.finalRoomList())
+# print(newBigHouse.finalRoomList())
+# print(newMedHouse.finalRoomList())
+# print(newSmallHouse.finalRoomList())
