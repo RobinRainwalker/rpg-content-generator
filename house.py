@@ -13,10 +13,14 @@ class House:
     def printHouse(house):
         print("size: ", house.size)
         print("rooms: ", house.rooms)
+
+    def generateNewVar(house, architecture):
+        house.architecture = architecture
+        print(architecture)
         #print("architecture: ", house.architecture)
 
 #def generateHouse(houseSize, houseRooms):
-    
+
 # Housing options
 houseSizes = ["small", "medium", "big", "mansion"]
 houseRooms = {
@@ -42,8 +46,10 @@ houseRoomsChoice = random.randint(houseRooms[houseSizeChoice]["min"],houseRooms[
 
 newHouse = House(houseSizeChoice, houseRoomsChoice)
 newHouse.printHouse()
+newHouse.generateNewVar("TEST")
 #test = House("big", 9, "old")
 #test.printHouse()
+
 
 
 
