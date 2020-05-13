@@ -1,64 +1,75 @@
-#This is a piece of code to generate a household in a medieval setting
 import random
 
-
-#Info:
-# size of house, rooms
-class House:
-    def __init__(house, size, rooms):
-        house.size = size
-        house.rooms = rooms
-        #house.architecture = architecture
-
-    def printHouse(house):
-        print("size: ", house.size)
-        print("rooms: ", house.rooms)
-
-    def generateNewVar(house, architecture):
-        house.architecture = architecture
-        print(architecture)
-        #print("architecture: ", house.architecture)
-
-#def generateHouse(houseSize, houseRooms):
-
-# Housing options
-houseSizes = ["small", "medium", "big", "mansion"]
-houseRooms = {
-    "small": {
-        "min": 0,
-        "max": 4
-    },
-    "medium": {
-        "min": 3,
-        "max": 7
-    },
-    "big": {
-        "min": 6,
-        "max": 12
-    },
-    "mansion": {
-        "min": 11,
-        "max": 28
-    }
-}
-houseSizeChoice = random.choice(houseSizes)
-houseRoomsChoice = random.randint(houseRooms[houseSizeChoice]["min"],houseRooms[houseSizeChoice]["max"])
-
-newHouse = House(houseSizeChoice, houseRoomsChoice)
-newHouse.printHouse()
-newHouse.generateNewVar("TEST")
-#test = House("big", 9, "old")
-#test.printHouse()
+class massiveHouse:
+    def __init__(self):
+        fullRoomList = ["kitchen", "dining room", "bedroom", "bedroom","bedroom","guest bedroom","servant bedroom","study","formal sitting room","privy","test","test","test","test","test","test","test","test","test","test","test","test","test","test","test","test","test","test"]
+        minRooms = 11
+        maxRooms = 28
+        roomNumber = random.randint(minRooms, maxRooms)
+        finalRoomList = []
+        self.roomNumber = roomNumber
+        self.roomList = fullRoomList
+        self.minRooms = minRooms
+        self.maxRooms = maxRooms
+        self.finalRoomList = finalRoomList
 
 
+        for index in range(roomNumber):
+            finalRoomList.append(fullRoomList[index])
+
+class bigHouse:
+    def __init__(self):
+        fullRoomList = ["kitchen", "dining room", "bedroom", "bedroom","bedroom","guest bedroom","study","formal sitting room","privy","test","test","servant bedroom"]
+        minRooms = 6
+        maxRooms = 12
+        roomNumber = random.randint(minRooms, maxRooms)
+        finalRoomList = []
+        self.roomNumber = roomNumber
+        self.roomList = fullRoomList
+        self.minRooms = minRooms
+        self.maxRooms = maxRooms
+        self.finalRoomList = finalRoomList
 
 
+        for index in range(roomNumber):
+            finalRoomList.append(fullRoomList[index])
+
+class medHouse:
+    def __init__(self):
+        fullRoomList = ["kitchen", "bedroom", "dining room", "bedroom", "bedroom","workroom", "study"]
+        minRooms = 3
+        maxRooms = 7
+        roomNumber = random.randint(minRooms, maxRooms)
+        finalRoomList = []
+        self.roomNumber = roomNumber
+        self.roomList = fullRoomList
+        self.minRooms = minRooms
+        self.maxRooms = maxRooms
+        self.finalRoomList = finalRoomList
 
 
-# what are the rooms(?)
-# # of people & gender & age & name & profession
-# # & types of pets
-# household items, food, tools
-# something precious
-# name the house
-# save the output as a text file
+        for index in range(roomNumber):
+            finalRoomList.append(fullRoomList[index])
+        
+
+class smallHouse:
+    def __init__(self):
+        fullRoomList = ["kitchen & dining room", "bedroom", "work room", "bedroom"]
+        minRooms = 1
+        maxRooms = 4
+        roomNumber = random.randint(minRooms, maxRooms)
+        finalRoomList = []
+        self.roomNumber = roomNumber
+        self.roomList = fullRoomList
+        self.minRooms = minRooms
+        self.maxRooms = maxRooms
+        self.finalRoomList = finalRoomList
+
+
+        for index in range(roomNumber):
+            finalRoomList.append(fullRoomList[index])
+
+# newMassiveHouse = massiveHouse()
+# newBigHouse = bigHouse()
+# newMedHouse = medHouse()
+# newSmallHouse = smallHouse()
