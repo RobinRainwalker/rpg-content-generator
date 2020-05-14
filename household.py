@@ -9,24 +9,40 @@ class Person:
     def __init__(self):
         self.test = test
 
+class Household:
+    def __init__(self):
+        householdMembers = 0
+    #     familyName = names.get_last_name()
+    #     self.familyName = familyName
+    #     self.householdMembers = householdMembers
+
+    #     print(self.familyName)
+    newSmallHouse = smallHouse()
+    rooms = newSmallHouse.finalRoomList
+    print(newSmallHouse.finalRoomList)
+    print(newSmallHouse.roomNumber)
+
+    def createFamilyName(self):
+        self.familyName = names.get_last_name()
+        print(self.familyName)
+
+        
 #head1
 #head2(?)
 #grandparent(s)?
 #children(?)
 #dynamic generation based on(?)number of bedrooms? 
-
-newSmallHouse = smallHouse()
-newSmallHouse.finalRoomList = []
-# print(newSmallHouse.finalRoomList)
+newHousehold = Household()
+newHousehold.createFamilyName()
 
 #need to generate # of people in a given household (sm, med, big, lg)
 #need to generate relationships
 #need to generate name/traits for given people
 
 # NAME_GENERATOR
-familyName = names.get_last_name()
-femaleFirstName = names.get_first_name(gender='female')
-maleFirstName = names.get_first_name(gender='male')
+# familyName = names.get_last_name()
+# femaleFirstName = names.get_first_name(gender='female')
+# maleFirstName = names.get_first_name(gender='male')
 # print(femaleFirstName + ' ' + familyName)
 # print(maleFirstName + ' ' + familyName)
 
