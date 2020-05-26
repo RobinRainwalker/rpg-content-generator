@@ -40,6 +40,7 @@ newHousehold.createFamilyName()
 #need to generate name/traits for given people
 
 # NAME_GENERATOR
+# source: https://github.com/treyhunner/names
 # familyName = names.get_last_name()
 # femaleFirstName = names.get_first_name(gender='female')
 # maleFirstName = names.get_first_name(gender='male')
