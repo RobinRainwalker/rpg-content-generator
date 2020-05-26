@@ -1,6 +1,6 @@
 import pytest
-from src.models.house import massiveHouse
+from src.models.house import MassiveHouse
 
 def test_new_massive_house():
-    new_massive_house = massiveHouse()
-    assert new_massive_house.maxRooms == 28
+    new_massive_house = MassiveHouse()
+    assert new_massive_house.max_rooms == 28
