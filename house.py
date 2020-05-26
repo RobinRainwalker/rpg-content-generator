@@ -13,7 +13,6 @@ class massiveHouse:
         self.maxRooms = maxRooms
         self.finalRoomList = finalRoomList
 
-
         for index in range(roomNumber):
             finalRoomList.append(fullRoomList[index])
 
@@ -29,7 +28,6 @@ class bigHouse:
         self.minRooms = minRooms
         self.maxRooms = maxRooms
         self.finalRoomList = finalRoomList
-
 
         for index in range(roomNumber):
             finalRoomList.append(fullRoomList[index])
@@ -47,7 +45,6 @@ class medHouse:
         self.maxRooms = maxRooms
         self.finalRoomList = finalRoomList
 
-
         for index in range(roomNumber):
             finalRoomList.append(fullRoomList[index])
         
@@ -64,7 +61,6 @@ class smallHouse:
         self.minRooms = minRooms
         self.maxRooms = maxRooms
         self.finalRoomList = finalRoomList
-
 
         for index in range(roomNumber):
             finalRoomList.append(fullRoomList[index])
